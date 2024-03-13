@@ -2,7 +2,7 @@ import { useData } from "../../src/hooks/useData.hook";
 import { ShoesCard } from "../../src/components/card";
 import { IProductType } from "../../src/types/product.type";
 import { useEffect, useState } from "react";
-import { Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Button, Flex, Input } from "@chakra-ui/react";
 
 export const Products = () => {
   const { products } = useData();
