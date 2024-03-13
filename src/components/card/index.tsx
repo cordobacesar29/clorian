@@ -54,7 +54,7 @@ export const ShoesCard = ({ product }: Props) => {
             borderRadius={8}
           >
             <Flex
-              _hover={{ cursor: isDisable() ? "wait" : "pointer" }}
+              _hover={{ cursor: isDisable() ? "not-allowed" : "pointer" }}
               onClick={() =>
                 setCount((count) => (count > 1 ? count - 1 : count))
               }

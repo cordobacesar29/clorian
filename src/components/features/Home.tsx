@@ -31,7 +31,13 @@ export const Home = () => {
         height: "1000px",
       }}
     >
-      <Suspense fallback={<CircularProgress isIndeterminate/>}>
+      <Suspense
+        fallback={
+          <Flex w={"100%"} h={"100vh"} justify={"center"} align={"center"}>
+            <CircularProgress isIndeterminate />
+          </Flex>
+        }
+      >
         <Canvas
           style={{ width: "100%", background: "transparent", height: "100%" }}
           camera={{ near: 0.1, far: 1000 }}

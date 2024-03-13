@@ -43,10 +43,7 @@ export const Products = () => {
   }, [products]);
 
   return (
-    <Flex direction={"column"} align={"center"} w={"full"}>
-      <Text color={"#08a05c"} fontWeight={600} fontSize={24} margin={"3rem"}>
-        Productos
-      </Text>
+    <Flex direction={"column"} align={"center"} w={"full"} my={8}>
       <Flex
         gap={2}
         w={"full"}
