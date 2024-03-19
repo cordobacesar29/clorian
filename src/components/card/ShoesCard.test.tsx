@@ -1,9 +1,6 @@
 import { beforeEach, describe, expect, test, vi, } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ShoesCard } from '.';
-import { useData } from '../../hooks/useData.hook';
-import { SetStateAction } from 'react';
-import { ICartType } from '../../types/product.type';
 
 // Mock product data
 const mockProduct = {
