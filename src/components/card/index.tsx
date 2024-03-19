@@ -29,7 +29,12 @@ export const ShoesCard = ({ product }: Props) => {
       >
         <img src={product.image} width={250} />
         <Flex direction={"column"} alignItems={"center"} gap={2}>
-          <Text fontSize={18} fontWeight={600} textAlign={"center"}>
+          <Text
+            fontSize={18}
+            fontWeight={600}
+            textAlign={"center"}
+            id="product-name"
+          >
             {product.name}
           </Text>
           <Flex width={"160px"}>
@@ -59,16 +64,16 @@ export const ShoesCard = ({ product }: Props) => {
                 setCount((count) => (count > 1 ? count - 1 : count))
               }
             >
-              <Icon as={MdArrowDropDown} boxSize={6} />
+              <Icon as={MdArrowDropDown} boxSize={6} title="subtract" />
             </Flex>
-            {count}
+            <p title="count">{count}</p>
             <Flex
               _hover={{ cursor: isDisable() ? "not-allowed" : "pointer" }}
               onClick={() =>
                 setCount((count) => (count < 10 ? count + 1 : count))
               }
             >
-              <Icon as={MdArrowDropUp} boxSize={6} />
+              <Icon as={MdArrowDropUp} boxSize={6} title="add" />
             </Flex>
           </Flex>
           <Button
